@@ -1,0 +1,19 @@
+#project-imgContainer{
+  width: 100%;
+}
+
+#magazine-imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#magazine-imgContainer > img{
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+}
+
+#magCover{
+}

@@ -1,0 +1,31 @@
+.counter-button{
+    width: auto;
+    height: 2rem;
+    padding: 0px;
+    border-radius: 0px;   
+}
+
+.counter-display{
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    border: solid thin #F5E5C8;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px){
+
+}
+
+/* TABLET */
+@media (min-width: 600px){
+
+}
+
+/* LAPTOP */
+@media (min-width: 900px){
+
+}

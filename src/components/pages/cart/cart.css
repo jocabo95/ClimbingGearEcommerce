@@ -1,0 +1,20 @@
+.cartCell {
+  width: 100%;
+}
+
+.cartCellGrid {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartHeaderGrid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0rem;
+  justify-content: center;
+}
+
