@@ -13,12 +13,12 @@ import {getStorage, ref, uploadBytes, getDownloadURL} from "firebase/storage";
 import {v4} from "uuid"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAC7WjcZh3C9mfS7zCUPn8klWloNldTUWU",
-  authDomain: "ramp-3547d.firebaseapp.com",
-  projectId: "ramp-3547d",
-  storageBucket: "ramp-3547d.appspot.com",
-  messagingSenderId: "902569381406",
-  appId: "1:902569381406:web:c20cbaea9229c632b7a80f"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storaggeBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 const app = initializeApp(firebaseConfig);
