@@ -35,12 +35,22 @@ const HeroImage = ({imgUrl, text, button}) => {
         {text && (
           <div className="hero-text-container">
             <Typography id="hero-title" sx={{ color: "white" }}>
-              {text}
+              Reach. 
+            </Typography>
+            <Typography id="hero-title" sx={{ color: "white" }}>
+              Aspire.
+            </Typography>
+            <Typography id="hero-title" sx={{ color: "white" }}>
+              Master. 
+            </Typography>
+            <Typography id="hero-title" sx={{ color: "white" }}>
+              Perform. 
             </Typography>
           </div>
         )}
 
-        {button && (
+        {/* //! BUTTON IF WANTED */}
+        {/* {button && (
           <Button
             id="hero-button"
             variant="contained"
@@ -49,11 +59,11 @@ const HeroImage = ({imgUrl, text, button}) => {
           >
             <Link to={"/aboutUs"}>
               <Typography sx={{ fontFamily: "Playfair" }}>
-                Sobre nosotros
+                button
               </Typography>
             </Link>
           </Button>
-        )}
+        )} */}
       </div>
     </>
   );
