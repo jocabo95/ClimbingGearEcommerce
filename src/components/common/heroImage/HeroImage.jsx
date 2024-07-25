@@ -22,7 +22,7 @@ const HeroImage = ({imgUrl, text, button}) => {
           <img
             className="hero-img"
             alt="Basalto estudio"
-            src={"src/assets/vueloBellaVista.jpg"}
+            src={"src/assets/sinopsisJose.JPG"}
           />
         ) : (
           <img

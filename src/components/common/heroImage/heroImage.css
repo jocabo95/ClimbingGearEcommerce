@@ -28,7 +28,7 @@
   padding: 0.5rem 1rem;
   background-color: background;
 
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 #hero-title{
@@ -65,21 +65,41 @@
   }
 }
 
-/* TABLET & DESKTOP */
+/* TABLET */
 @media (min-width: 600px) {
-  @media (max-width: 900px) {
-    #hero-container {
-      height: calc(100vh - 64px);
-    }
+  #hero-container {
+    height: calc(100vh - 64px);
   }
-  @media (min-width: 900px) {
-    #hero-container {
-      height: calc(100vh - 124px);
-    }
-  }
-
+  
   .hero-img {
     width: 100%;
+  }
+
+  #hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .hero-text-container {
+    top: 55%;
+    left: 41%;
+  }
+
+  #hero-button {
+    top: 85%;
+    left: 40%;
+
+    height: 50px;
+    width: 10rem;
+
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  
+  #hero-container {
+    height: calc(100vh - 124px);
   }
 
   #hero-title {
