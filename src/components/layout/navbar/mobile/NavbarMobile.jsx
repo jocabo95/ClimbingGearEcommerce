@@ -68,9 +68,9 @@ const NavbarMobile = ({ data }) => {
           {/* logo */}
           <Link to="/">
             <img
-              alt="BASALTO STUDIO"
-              src="src\images\logo.PNG"
-              width={"50px"}
+              alt="RAMP"
+              src="src\assets\logo.png"
+              width={"20px"}
             />
           </Link>
 

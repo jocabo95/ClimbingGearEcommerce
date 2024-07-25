@@ -91,15 +91,21 @@ const NavbarDesktop = ({ data }) => {
                       alignItems: "center",
                     }}
                   >
+                    <img
+                      alt="RAMP"
+                      src="src\assets\logo.png"
+                      width={"20px"}
+                    />
                     <Typography
-                      variant="h6"
+                      variant="h4"
                       sx={{
-                        fontSize: "1.2rem",
-                        fontWeight: "600",
+                        // fontSize: "1.2rem",
+                        fontWeight: "500",
                         fontFamily: "Raleway",
+                        ml:"0.5rem"
                       }}
                     >
-                      <Link to={"/"}>BASALTO STUDIO</Link>
+                      R.A.M.P
                     </Typography>
                   </Box>
                 </Grid>

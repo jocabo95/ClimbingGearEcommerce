@@ -22,35 +22,35 @@ const HeroImage = ({imgUrl, text, button}) => {
           <img
             className="hero-img"
             alt="Basalto estudio"
-            src={"src/images/heroTablet.PNG"}
+            src={"src/assets/vueloBellaVista.jpg"}
           />
         ) : (
           <img
             className="hero-img"
             alt="Basalto estudio"
-            src={"src/images/heroMobile1.PNG"}
+            src={"src/assets/Mache.jpg"}
           />
         )}
 
         {text && (
           <div className="hero-text-container">
             <Typography id="hero-title" sx={{ color: "white" }}>
-              Reach. 
+              REACH. 
             </Typography>
             <Typography id="hero-title" sx={{ color: "white" }}>
-              Aspire.
+              ASPIRE.
             </Typography>
             <Typography id="hero-title" sx={{ color: "white" }}>
-              Master. 
+              MASTER. 
             </Typography>
             <Typography id="hero-title" sx={{ color: "white" }}>
-              Perform. 
+              PERFORM. 
             </Typography>
           </div>
         )}
 
         {/* //! BUTTON IF WANTED */}
-        {/* {button && (
+        {button && (
           <Button
             id="hero-button"
             variant="contained"
@@ -58,12 +58,12 @@ const HeroImage = ({imgUrl, text, button}) => {
             disableFocusRipple={true}
           >
             <Link to={"/aboutUs"}>
-              <Typography sx={{ fontFamily: "Playfair" }}>
-                button
+              <Typography sx={{ fontFamily: "Lato", fontWeight: "600", fontSize:"1.2rem", color:"black" }}>
+                COMPRAR
               </Typography>
             </Link>
           </Button>
-        )} */}
+        )}
       </div>
     </>
   );

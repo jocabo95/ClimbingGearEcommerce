@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <HeroImage
-        imgUrl={"src/images/heroDesktop1.PNG"}
+        imgUrl={"src/assets/Mache.jpg"}
         text={heroText}
         button={true}
       />
