@@ -20,14 +20,20 @@
   text-align: left;
 }
 
-#hero-button {
+#heroButtonContainer{
   position: absolute;
-  /* transform: translate(120%, -50%); */
+  top: 85%;
+  width: 100%;
+  text-align: center;
+}
+
+#hero-button {
   text-transform: capitalize;
   padding: 0.5rem 1rem;
   background-color: background;
 
   border-radius: 50px;
+  
 }
 
 #hero-title{
@@ -51,14 +57,11 @@
   }
 
   .hero-text-container {
-    top: 31vh;
+    top: 25%;
     left: 10%;
   }
 
   #hero-button {
-    top: 85%;
-    left: 30%;
-
     font-size: 3rem;
   }
 
@@ -78,7 +81,7 @@
   }
 
   #hero-title {
-    font-size: 3rem;
+    font-size: 7vh;
     font-weight: 700;
   }
 
@@ -88,9 +91,6 @@
   }
 
   #hero-button {
-    top: 85%;
-    left: 35%;
-
     height: 3rem;
     width: 15rem;
   }
@@ -114,9 +114,6 @@
   }
 
   #hero-button {
-    top: 85%;
-    left: 42%;
-
     height: auto;
     width: 15rem;
 

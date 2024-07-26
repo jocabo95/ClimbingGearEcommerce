@@ -53,18 +53,20 @@ const HeroImage = ({imgUrl, text, button}) => {
 
         {/* //! BUTTON IF WANTED */}
         {button && (
-          <Button
+          <div id="heroButtonContainer">
+            <Button
             id="hero-button"
             variant="contained"
             size="large"
             disableFocusRipple={true}
-          >
-            <Link to={"/aboutUs"}>
-              <Typography className="buttonText" sx={{ fontFamily: "Lato", fontWeight: {xs:"400", sm:"500", md:"600"}, fontSize:{xs:"1rem", sm:"1.4rem"}, color:"black" }}>
-                COMPRAR
-              </Typography>
-            </Link>
-          </Button>
+            >
+              <Link to={"/aboutUs"}>
+                <Typography className="buttonText" sx={{ fontFamily: "Lato", fontWeight: {xs:"400", sm:"500", md:"600"}, fontSize:{xs:"1rem", sm:"1.4rem"}, color:"black" }}>
+                  COMPRAR
+                </Typography>
+              </Link>
+            </Button>
+          </div>
         )}
       </div>
     </>
