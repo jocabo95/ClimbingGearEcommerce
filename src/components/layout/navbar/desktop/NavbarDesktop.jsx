@@ -93,7 +93,7 @@ const NavbarDesktop = ({ data }) => {
                   >
                     <img
                       alt="RAMP"
-                      src="src\assets\logo.png"
+                      src="src/assets/RAMPsinFondo.png"
                       width={"20px"}
                     />
                     <Typography
@@ -101,8 +101,9 @@ const NavbarDesktop = ({ data }) => {
                       sx={{
                         // fontSize: "1.2rem",
                         fontWeight: "500",
-                        fontFamily: "Raleway",
-                        ml:"0.5rem"
+                        fontFamily: "Lato",
+                        ml:"0.5rem",
+                        letterSpacing:"0.6rem"
                       }}
                     >
                       R.A.M.P

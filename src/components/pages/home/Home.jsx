@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import HeroImage from "../../common/heroImage/HeroImage";
-import Proyectos from "./proyectos/Proyectos";
-
 
 
 const Home = () => {
@@ -18,7 +16,6 @@ const Home = () => {
         text={heroText}
         button={true}
       />
-      <Proyectos />
     </div>
   );
 };

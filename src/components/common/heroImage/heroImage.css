@@ -17,7 +17,6 @@
 
 .hero-text-container {
   position: absolute;
-  transform: translate(-80%, -65%);
   text-align: left;
 }
 
@@ -32,7 +31,7 @@
 }
 
 #hero-title{
-  font-family: "Lato";
+  font-family: "Poppins";
 }
 
 /* MOBILE */
@@ -47,14 +46,13 @@
 
   #hero-title {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
 
-    letter-spacing: 1.5vw;
   }
 
   .hero-text-container {
-    top: 60vh;
-    left: 70%;
+    top: 31vh;
+    left: 10%;
   }
 
   #hero-button {
@@ -85,8 +83,8 @@
   }
 
   .hero-text-container {
-    top: 30%;
-    left: 41%;
+    top: 10%;
+    left: 10%;
   }
 
   #hero-button {
@@ -111,8 +109,8 @@
   }
 
   .hero-text-container {
-    top: 55%;
-    left: 21%;
+    top: 10%;
+    left: 5%;
   }
 
   #hero-button {
