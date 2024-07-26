@@ -10,7 +10,7 @@ const HeroImage = ({imgUrl, text, button}) => {
   let theme = useTheme()
 
   let desktop = useMediaQuery(theme.breakpoints.up('md'))
-  let tablet = useMediaQuery(theme.breakpoints.up('xs'))
+  let tablet = useMediaQuery(theme.breakpoints.up('sm'))
 
  
   return (
@@ -18,18 +18,20 @@ const HeroImage = ({imgUrl, text, button}) => {
       <div id="hero-container">
         {desktop ? (
           <img className="hero-img" alt="Basalto estudio" src={imgUrl} />
-        ) : tablet ? (
-          <img
-            className="hero-img"
-            alt="Basalto estudio"
-            src={"src/assets/sinopsisJose.JPG"}
-          />
         ) : (
-          <img
-            className="hero-img"
-            alt="Basalto estudio"
-            src={"src/assets/Mache.jpg"}
-          />
+          tablet ? (
+            <img
+              className="hero-img"
+              alt="Basalto estudio"
+              src={"src/assets/sinopsisIpad.JPG"}
+            />
+          ) : (
+            <img
+              className="hero-img"
+              alt="Basalto estudio"
+              src={"src/assets/bellaVistaGuaca.jpg"}
+            />
+          )
         )}
 
         {text && (
@@ -58,7 +60,7 @@ const HeroImage = ({imgUrl, text, button}) => {
             disableFocusRipple={true}
           >
             <Link to={"/aboutUs"}>
-              <Typography sx={{ fontFamily: "Lato", fontWeight: "600", fontSize:"1.2rem", color:"black" }}>
+              <Typography className="buttonText" sx={{ fontFamily: "Lato", fontWeight: {xs:"400", sm:"500", md:"600"}, fontSize:{xs:"1rem", sm:"1.4rem"}, color:"black" }}>
                 COMPRAR
               </Typography>
             </Link>
