@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Footer from "../../footer/Footer";
-import { backIn } from "framer-motion";
 
 const NavbarDesktop = ({ data }) => {
   const {
@@ -134,7 +133,7 @@ const NavbarDesktop = ({ data }) => {
                           <Button variant="text">
                             <Typography
                               variant="body"
-                              sx={{ fontSize: "0.7rem", fontFamily: "Lato" }}
+                              sx={{ fontSize: "0.7rem", fontFamily: "Lato", fontWeight:"700" }}
                             >
                               {el.title}
                             </Typography>
