@@ -2,3 +2,10 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.logoText {
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Special elite;
+}
+

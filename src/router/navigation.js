@@ -9,14 +9,9 @@ export const menuItems = [
         title: "PRODUCTOS",
     },
     {
-        id: "espacios",
-        path: "/projects",
-        title: "ESPACIOS",
-    },
-    {
-        id: "publicaciones",
-        path: "/publications",
-        title: "PUBLICACIONES",
+        id: "entrenamientos",
+        path: "/shop",
+        title: "ENTRENAMIENTOS",
     },
     {
         id: "sobre nosotros",

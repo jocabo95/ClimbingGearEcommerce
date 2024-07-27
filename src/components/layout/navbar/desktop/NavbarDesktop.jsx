@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Footer from "../../footer/Footer";
+import { backIn } from "framer-motion";
 
 const NavbarDesktop = ({ data }) => {
   const {
@@ -31,8 +32,7 @@ const NavbarDesktop = ({ data }) => {
   }, 0)
 
   //- MODIFIABLES
-  let topNavbarHeight = "60px";
-  let bottomNavbarHeight = "64px";
+  let bottomNavbarHeight = "80px";
 
   return (
     <>
@@ -66,77 +66,49 @@ const NavbarDesktop = ({ data }) => {
               width: "100%",
             }}
           >
+
+            {/* NAVBAR CONTENT */}
             <Grid container>
-              {/* logo & Cart*/}
-              <Grid
-                item
-                container
-                xs={12}
-                sx={{
-                  height: topNavbarHeight,
-                  borderBottom: "groove thin #D5D5D5",
-                  padding: "0 24px 0 24px",
-                }}
-              >
-                <Grid item xs={1}>
-                  {/* used to center basalto (easier with 3 grid cells) */}
-                </Grid>
-                <Grid item xs={10}>
-                  <Box
-                    sx={{
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <img
-                      alt="RAMP"
-                      src="src/assets/RAMPsinFondo.png"
-                      width={"20px"}
-                    />
-                    <Typography
-                      variant="h4"
-                      sx={{
-                        // fontSize: "1.2rem",
-                        fontWeight: "500",
-                        fontFamily: "Lato",
-                        ml:"0.5rem",
-                        letterSpacing:"0.6rem"
-                      }}
-                    >
-                      R.A.M.P
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={1}>
-                  <Box
-                    sx={{
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "flex-end",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Link to={"/cart"}>
-                      <Badge
-                        badgeContent={cartBadgeNumber}
-                        color="warning"
-                        overlap="circular"
-                      >
-                        <IconButton>
-                          <ShoppingCartIcon color="secondary" />
-                        </IconButton>
-                      </Badge>
-                    </Link>
-                  </Box>
-                </Grid>
+
+              {/* LOGO */}
+              <Grid item container xs={3}>
+
+                <Box sx={{height: bottomNavbarHeight, width:"100%", display:"flex"}}>
+
+                  <Grid item  xs={3} sx={{display:"flex", justifyContent:"flex-end", alignItems:"center", pr:"0.4rem"}}>
+                    {/* logo */}
+                    
+                      <img
+                        alt="RAMP"
+                        src="src/assets/RampGruesoSinFondo.png"
+                        width={"30px"}
+                      />
+                    
+                  </Grid>
+
+                  <Grid item xs={9} sx={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
+
+                    <Box>
+                      <Grid item xs={12} sx={{display:"flex", flexDirection:"column", justifyContent:"flex-end"}}>
+                        {/* ramp */}
+                        <p className="logoText">R.A.M.P</p>
+                      </Grid>
+
+                      <Grid item xs={12} sx={{display:"flex", flexDirection:"column", justifyContent:"flex-start"}}>
+                        {/* climbing */}
+                        <p className="logoText">climbing</p>
+                      </Grid>
+                    </Box>
+                    
+
+                  </Grid>
+
+                </Box>
+
               </Grid>
 
               {/* navbar buttons */}
-              <Grid item xs={12}>
+              <Grid item xs={6}>
                 <Box
                   sx={{
                     display: {
@@ -144,7 +116,7 @@ const NavbarDesktop = ({ data }) => {
                       display: "flex",
                       flexDirection: "row",
                       justifyContent: "center",
-                      gap: "4rem",
+                      gap: "2rem",
                     },
                   }}
                 >
@@ -162,7 +134,7 @@ const NavbarDesktop = ({ data }) => {
                           <Button variant="text">
                             <Typography
                               variant="body"
-                              sx={{ fontSize: "0.7rem" }}
+                              sx={{ fontSize: "0.7rem", fontFamily: "Lato" }}
                             >
                               {el.title}
                             </Typography>
@@ -171,6 +143,32 @@ const NavbarDesktop = ({ data }) => {
                       </Box>
                     );
                   })}
+                </Box>
+              </Grid>
+
+              {/* CART */}
+              <Grid item xs={3}>
+                <Box
+                  sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                    mr:"2.5rem"
+                  }}
+                >
+                  <Link to={"/cart"}>
+                    <Badge
+                      badgeContent={cartBadgeNumber}
+                      color="warning"
+                      overlap="circular"
+                    >
+                      <IconButton>
+                        <ShoppingCartIcon color="secondary" />
+                      </IconButton>
+                    </Badge>
+                  </Link>
                 </Box>
               </Grid>
             </Grid>
@@ -207,7 +205,6 @@ const NavbarDesktop = ({ data }) => {
           component="main"
           sx={{
             flexGrow: 1,
-            py: "60px", //! padding betwwen hero img and content
             width: "100%",
             minHeight: "100vh",
           }}

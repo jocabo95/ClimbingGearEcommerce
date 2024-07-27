@@ -100,7 +100,7 @@
 @media (min-width: 900px) {
   
   #hero-container {
-    height: calc(100vh - 124px);
+    height: calc(100vh - 60px);
   }
 
   #hero-title {
