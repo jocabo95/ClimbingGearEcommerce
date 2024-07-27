@@ -69,7 +69,7 @@ const NavbarMobile = ({ data }) => {
           <Link to="/">
             <img
               alt="RAMP"
-              src="src/assets/RAMPsinFondo.png"
+              src="src/assets/RampGruesoSinFondo.png"
               width={"20px"}
             />
           </Link>
