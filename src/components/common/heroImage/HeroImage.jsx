@@ -60,7 +60,7 @@ const HeroImage = ({imgUrl, text, button}) => {
             size="large"
             disableFocusRipple={true}
             >
-              <Link to={"/aboutUs"}>
+              <Link to={"/shop"}>
                 <Typography className="buttonText" sx={{ fontFamily: "Lato", fontWeight: {xs:"400", sm:"500", md:"600"}, fontSize:{xs:"1rem", sm:"1.4rem"}, color:"black" }}>
                   COMPRAR
                 </Typography>

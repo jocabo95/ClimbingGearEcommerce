@@ -35,6 +35,7 @@ const LoginContainer = () => {
         let res = await onSignIn(userCredentials);
 
         if(res.user){
+          console.log("res.user.uid= ", res.user.uid);
           let refCollection = collection(db, "users")
           let refdoc = doc(refCollection, res.user.uid)
           let userDoc = await getDoc(refdoc)

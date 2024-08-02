@@ -24,7 +24,7 @@ const ShopHeader = () => {
 
   },[])
 
-  const header= {header: "MOBILIARIO"}
+  const header= {header: "HANGBOARDS"}
   const navigationCategories = {categories, redirectToUrl:'/shop'}
 
   return (
