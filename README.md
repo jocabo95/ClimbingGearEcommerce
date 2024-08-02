@@ -12,8 +12,8 @@ Proyecto para distribuír equipo para acondicionamiento físico especifico para 
     VITE_appId=
 
     VALUES OBTAINED FROM MERCADOPAGO
-    VITE_publicKey= APP_USR-5109f626-83bc-462d-b265-4fc9e81bb292
+    VITE_publicKey= 
     
     
     VALUE SET UN IN USERS COLLECTION IN FIREBASE
-    VITE_ADMINROLE= iofx43
+    VITE_ADMINROLE= 
