@@ -72,35 +72,21 @@ const NavbarDesktop = ({ data }) => {
               {/* LOGO */}
               <Grid item container xs={3}>
 
-                <Box sx={{height: bottomNavbarHeight, width:"100%", display:"flex"}}>
+                <Box sx={{height: bottomNavbarHeight, width:"100%", display:"flex",  justifyContent:"flex-start", alignItems:"center", pl:"3rem"}}>
 
-                  <Grid item  xs={3} sx={{display:"flex", justifyContent:"flex-end", alignItems:"center", pr:"0.4rem"}}>
+                  {/* <Grid item  xs={4} sx={{display:"flex", justifyContent:"flex-end", alignItems:"center", pl:"1.5rem"}}> */}
                     {/* logo */}
-                    
+                    <Link to="/">
                       <img
                         alt="RAMP"
-                        src="src/assets/RampGruesoSinFondo.png"
-                        width={"30px"}
-                      />
+                        src="src/assets/logoBox.png"
+                        width={"100px"}
+                        />
+                        </Link>
                     
-                  </Grid>
+                  {/* </Grid> */}
 
-                  <Grid item xs={9} sx={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
-
-                    <Box>
-                      <Grid item xs={12} sx={{display:"flex", flexDirection:"column", justifyContent:"flex-end"}}>
-                        {/* ramp */}
-                        <p className="logoText">R.A.M.P</p>
-                      </Grid>
-
-                      <Grid item xs={12} sx={{display:"flex", flexDirection:"column", justifyContent:"flex-start"}}>
-                        {/* climbing */}
-                        <p className="logoText">climbing</p>
-                      </Grid>
-                    </Box>
-                    
-
-                  </Grid>
+                  
 
                 </Box>
 
