@@ -20,6 +20,7 @@ const ItemList = ({ data }) => {
       {/* SHOP HEADER */}
       <ShopHeader data={data} />
 
+      {/* clear filters */}
       <Link to={"/shop"}>
         <Button
           variant="text"
